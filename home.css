@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: url('camellia.jpg');
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 4, 4);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #eee6e6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right,rgb(11, 1, 104),rgb(190, 228, 19));
+    margin-top: 600px;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    p{
+        color: white;
+    }
+
+    .welcome-section {
+        padding: 50px 20px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+}
+
+        body {
+            
+    
+            
+            /* Ensure the image covers the entire background */
+            background-size: cover;
+
+            /* Center the background image */
+            background-position: center;
+
+            /* Prevent the image from repeating */
+            background-repeat: no-repeat;
+
+            /* Set a fallback background color */
+            background-color: #f4f4f4;
+
+            /* Set the height to fill the viewport */
+            height: 100vh;
+
+            /* Remove default margin and padding */
+            margin: 0;
+            padding: 0;
+        }
